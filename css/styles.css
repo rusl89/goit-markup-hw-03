@@ -19,6 +19,11 @@ html {
 
 }
 
+header {
+    height: 80px;
+    width: 100%;
+    border-bottom: solid 1px #ECECEC;
+}
 
 body {
     background-color: var(--primary-white);
@@ -26,6 +31,10 @@ body {
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03;
+}
+
+footer {
+    width: 100%;
 }
 
 ul {
@@ -78,6 +87,7 @@ a {
     margin-left: auto;
 }
 
+
 .site-nav {
     margin-left: 85px;
 }
@@ -97,6 +107,7 @@ letter-spacing: 0.02;
 
 .site-nav .link.current {
     color: var(--accent);
+    border-bottom: solid 2px var(--accent);
 }
 
 
@@ -119,14 +130,25 @@ letter-spacing: 0.02;
 .link:hover,.link:focus {
     color: var(--accent)
 }
+
 /* Main */
 
 /* Hero */
 
 .hero {
     text-align: center;
+    width: 1600px;
+    min-height: 600px;
 }
 
+button {
+    width: 200px;
+    height: 50px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    color: var(--primary-white);
+    background-color: var(--accent);
+}
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -166,6 +188,7 @@ letter-spacing: 0.02;
 
 .item {
     margin-right: 30px;
+
 }
 .feature-list .item {
     width: 270px;
@@ -197,6 +220,7 @@ letter-spacing: 0.02;
     line-height: 1.7;
 }
 
+
 /*  What we do */
 
 .service-list .item {
@@ -226,11 +250,13 @@ letter-spacing: 0.02;
 
 .team-list .item {
     width: 270px;
+    height: 422px;
+    background-color: var(--primary-white);
 }
 
 
 .team-list .title {
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
@@ -376,12 +402,8 @@ footer .title {
 
 }
 
-.work-element:nth-child(3n) {
+.work-element:nth-child(3n){
     margin-right: 0px;
-}
-
-.work-element:nth-child(-n + 3) {
-    margin-bottom: 0;
 }
 
 .nav-buttons {
@@ -395,6 +417,8 @@ footer .title {
 .button-port {
     color: var(--title-text-color);
     background-color: #F5F4FA;
+    margin-right: 8px;
+    border: 0px solid transparent
 }
 
 .button-port:hover, 
@@ -433,4 +457,8 @@ footer .title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
+}
+
+.work-element {
+    border: solid 1px #EEEEEE;
 }
